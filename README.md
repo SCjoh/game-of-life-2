@@ -236,6 +236,29 @@ namespace SpriteKind {
     export const Vind = SpriteKind.create()
 }
 for (let index = 0; index < 20; index++) {
+     energi = sprites.create(img`
+         . . . . . 9 f f f f 9 9 9 9 9 9
+         . . . . . 9 f 9 9 f 9 9 f f f f
+         . 9 9 9 9 9 9 9 9 f 9 9 f 9 9 f
+         . 9 f f f f f f f f 9 9 9 9 9 f
+         . 9 9 9 9 9 9 9 9 9 9 9 9 9 9 f
+         . 9 f f f f f f f f f f f f f f
+         . 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9
+         . 9 f f f f f f f f f f f 9 . .
+         . 9 9 9 9 9 9 9 9 9 9 9 f 9 . .
+         . . . . . . . . 9 f 9 9 f 9 . .
+         . . . . . . . . 9 f f f f 9 . .
+         . . . . . . . . 9 9 9 9 9 9 . .
+         . . . . . . . . . . . . . . . .
+         . . . . . . . . . . . . . . . .
+         . . . . . . . . . . . . . . . .
+         . . . . . . . . . . . . . . . .
+     `, SpriteKind.Vind)
+ 
+
+    tiles.placeOnRandomTile(energi, sprites.dungeon.darkGroundCenter)
+}
+for (let index = 0; index < 80; index++) {
     energi = sprites.create(img`
         . . . . . . . . . . . . . . . .
         . . . . . f f f f f . . . . . .
@@ -254,27 +277,6 @@ for (let index = 0; index < 20; index++) {
         . . . . . . . . . . . . . . . .
         . . . . . . . . . . . . . . . .
     `, SpriteKind.Kull)
-    tiles.placeOnRandomTile(energi, sprites.dungeon.darkGroundCenter)
-}
-for (let index = 0; index < 80; index++) {
-    energi = sprites.create(img`
-        . . . . . 9 f f f f 9 9 9 9 9 9
-        . . . . . 9 f 9 9 f 9 9 f f f f
-        . 9 9 9 9 9 9 9 9 f 9 9 f 9 9 f
-        . 9 f f f f f f f f 9 9 9 9 9 f
-        . 9 9 9 9 9 9 9 9 9 9 9 9 9 9 f
-        . 9 f f f f f f f f f f f f f f
-        . 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9
-        . 9 f f f f f f f f f f f 9 . .
-        . 9 9 9 9 9 9 9 9 9 9 9 f 9 . .
-        . . . . . . . . 9 f 9 9 f 9 . .
-        . . . . . . . . 9 f f f f 9 . .
-        . . . . . . . . 9 9 9 9 9 9 . .
-        . . . . . . . . . . . . . . . .
-        . . . . . . . . . . . . . . . .
-        . . . . . . . . . . . . . . . .
-        . . . . . . . . . . . . . . . .
-    `, SpriteKind.Vind)
     tiles.placeOnRandomTile(energi, sprites.castle.tilePath5)
 }
 ```
