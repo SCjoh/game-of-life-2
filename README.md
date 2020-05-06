@@ -167,11 +167,8 @@ if (Math.randomRange(0, 10) < 8) {
     tiles.placeOnRandomTile(mySprite, sprites.castle.tilePath5)
 }
 info.startCountdown(10)
-info.setScore(6)
-forever(function () {
-    info.changeScoreBy(-1)
-    pause(1000)
-})
+info.setScore(0)
+
 
 
 ```
@@ -487,7 +484,7 @@ if (Math.randomRange(0, 10) < 8) {
     tiles.placeOnRandomTile(mySprite, sprites.castle.tilePath5)
 }
 info.startCountdown(10)
-info.setScore(6)
+info.setScore(0)
 ```
 
 
